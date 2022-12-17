@@ -1,4 +1,4 @@
-T03 - Compulsory Task 2: Fortune Teller
+//T03 - Compulsory Task 2: Fortune Teller
 
 let motherFirstName=prompt("What is your mother's first name?");
 console.log(motherFirstName);
