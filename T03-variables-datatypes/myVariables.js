@@ -1,4 +1,4 @@
-//T03 - Compulsory Task 1
+//T03 -Variables & Datatypes: Compulsory Task 1
 
 let myFirstNumber = 7;
 let mySecondNumber= 5;
