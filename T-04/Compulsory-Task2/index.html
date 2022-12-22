@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    let waterPay = prompt("Please enter the volume of water used: ");
+
+if  (waterPay < 6000) {
+    console.log("The number is below 6000");
+    console.log (waterPay / 1000); //The outcome of this must be saved as a different let 
+    console.log (waterPay * 15.73);// outcome of the above times by this amount
+    }
+    else if (waterPay > 6000  && waterPay <= 10500) {
+    console.log("The number is between 6000 and 10500");
+    }
+    else if (waterPay > 10500  && waterPay <= 35000) {
+    console.log("The number is between 10500 and 35000");
+    }
+     else if (waterPay > 35000) {
+    console.log("The number is above 35000");
+    }
+    
+</body>
+</html>
+
+let rateData = [{
+    upTo: 6000,
+    rate: 15.73
+  },
+  {
+    upTo: 10500,
+    rate: 22.38
+  },
+  {
+    upTo: 35000,
+    rate: 34.0. // made this one up, not in the OP
+  },
+  {
+    upTo: Number.MAX_SAFE_INTEGER,
+    rate: 50.0. // made this one up, not in the OP
+  }
+];
+
+function rateDatumForUsage(usage) {
+  return rateData.find(r => usage <= r.upTo);
+}
+
+function costForUsage(usage) {
+  const rateDatum = rateDatumForUsage(usage);
+  return usage * rateDatum.rate;
+}
+
+console.log(`The cost of using 5000 units is (15.73*5000) ${costForUsage(5000)}`)
+console.log(`The cost of using 10000 units is (22.38*10000) ${costForUsage(10000)}`)
+console.log(`The cost of using 100000 units is (50*100000) ${costForUsage(100000)}`)
+
+const steps = [
+    6000,
+    10500,
+    35000
+];
+
+const rates = [
+    10,
+    20,
+    30
+];
+
+function calculate(used) {
+    let output = 0;
+    for (let i = 0; i < steps.length; i++) {
+        if (used >= steps[i]) {
+            output += steps[i] * rates[i];
+        } else {
+            output += (used - (steps[i - 1] || 0)) * rates[i];
+            break;
+        }
+    }
+    return output;
+}
+
+console.log(calculate(3000));
+console.log(calculate(6000));
+console.log(calculate(9000));
+console.log(calculate(50000));
