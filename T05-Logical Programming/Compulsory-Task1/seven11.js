@@ -1,4 +1,4 @@
-T05-Compulsory Task 1
+// T05-Compulsory Task 1
 
 let num=prompt("Please enter a number : ");
 
@@ -22,7 +22,7 @@ let num=prompt("Please enter a number : ");
     }
 
 
-    if ((!num % 7===0) && (!num % 11===0)) {
+    if (!(num % 7===0) && !(num % 11===0)) {
         console.log("Number is neither divisible by 7 nor by 11");
 
 }else{
