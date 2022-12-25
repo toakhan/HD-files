@@ -1,4 +1,4 @@
-// T05-Compulsory Task 1
+// T05 - Compulsory Task 1
 
 let num=prompt("Please enter a number : ");
 

@@ -1,4 +1,4 @@
-// T05- Compulsory Task 2
+// T05 - Compulsory Task 2
 
 let side1 = prompt ("Enter length of side 1: " );
 let side2 = prompt ("Enter length of side 2: " );
@@ -8,17 +8,64 @@ let side4 = prompt ("Enter length of side 4: " );
 // Opposite corners (angles) are equal in all
 // four quadrilateral shapes. 
 
-let corner1 =  60;
-let corner2 = 120;
-let corner3 =  60;
-let corner4 = 120;
+let corner1 =  90;
+let corner2 =  90;
+let corner3 =  90;
+let corner4 =  90;
 
-// This is a parallelogram shape,
-// if opposite sides are also equal.
 
-if ((side1===side3) && (side2===side4)) {
-    console.log ("It is a parallelogram.");
-}else{
-    console.log ("It is some other quadrilateral shape.");
+if ((side1===side2===side3===side4)) 
+     && ((corner1===corner2===corner3===corner4)){
+
+        console.log ("It is a square.");
+
+    }else if
+
+        ((side1===side2===side3===side4)) 
+        && ((corner1===corner3)<90 || (corner2===corner4)<90))
+        &&  (((corner1===corner3)>90 || (corner2===corner4)>90)){
+
+            console.log ("It is a rhombus."); 
+
+    }else if
+
+         ((side1===side3) && (side2===side4)) 
+        && ((corner1===corner2===corner3===corner4)){
+
+            console.log ("It is a rectangle.");
+
+    }else if
+
+        ((side1===side3) && (side2===side4)) 
+        && ((corner1===corner3) && (corner2===corner4)){
+
+        console.log ("It is a parallelogram.");
+
+    }else{
+
+        console.log ("It is some other quadrilateral shape.");
+
+    }        
+
     
-}
+   
+       
+
+     
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
