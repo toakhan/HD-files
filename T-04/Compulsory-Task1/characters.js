@@ -1,6 +1,6 @@
 let char=prompt("Enter a character: ");
     console.log("Entered character is: " +char);
-    
+    if (char.toLowerCase() != char.toUpperCase()){
         if(char.toUpperCase()===char){
         console.log("char is an uppercase letter: " + char);
         }
@@ -9,8 +9,8 @@ let char=prompt("Enter a character: ");
         console.log ("char is a lowercase letter: " + char);
 
         }
-    
-        else if (char.Number.isInteger()===char){
+    }
+        else if (!isNaN(char)){
         console.log ("char is a number: " + char);
 
         }
