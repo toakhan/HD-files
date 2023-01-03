@@ -5,8 +5,6 @@ console.log(string);
 
 let len = string.length;
 
-let msg = "racecar is a Palindrome word.";
-console.log (len);
 
 //length of string (entered word) is split in half, both parts are then compared.
 // First part is iterated through for loop:
@@ -20,6 +18,7 @@ console.log(string[len-1-i]);
 //String (entered word) both parts are compared for equality:
     if(string[i]!=string[len-1-i]){
         msg="It is not a palindrome word.";
-}
+}else
+        msg="It is a pallindrome word.";
 }
 console.log(`${string}: ${msg}`);
