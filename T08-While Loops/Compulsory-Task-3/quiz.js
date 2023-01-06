@@ -6,25 +6,34 @@ let b = "b";
 let c = "c";
 let d = "d";
 let count = 0;
+let userInput = ""
 
 do {
-    prompt("What color is the Sky? \na: Purple \nb: Pink \nc: Blue \nd: Yellow. Enter a, b, c or d : ");
-    
-    count= count+1;
- while (correctAns != "c");
-    console.log("That's incorrect!.")}
+   userInput= prompt("What color is the Sky? \na: Purple \nb: Pink \nc: Blue \nd: Yellow. Enter a, b, c or d : ");
+   if (userInput=="c") {
+    //write console.log correct
+   }else{
+    //add prompt wrong answer copy line 12, do you want to try again
+   }
+//prompt user for y or n 
    
-    let retry = alert("Try again? y/n")
+  //  count= count+1;
+}
+ while (userInput=="y");
 
-if (retry == y) {
-    count ++;
-}
-else if (retry == n) {
-    break [label];
-}
-else (answer == c) {
-    console.log("That's correct !");
-}
+   // console.log("That's incorrect!.")
+   
+  //  let retry = alert("Try again? y/n")
+
+
+// eif (retry == y) {
+//     count ++;
+// }
+// else if (retry == n) {
+//     break [label];
+// }lse (answer == c) {
+//     console.log("That's correct !");
+// }
 
 
 
