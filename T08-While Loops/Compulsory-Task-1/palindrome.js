@@ -1,10 +1,71 @@
 //Program to check if an entered word is a Palindrome word.
 
-let string=prompt("Please enter a word:");
+
+let userInput = "";
+let i = userInput.length;
+
+userInput = prompt("Enter a word : ");
+while (i--){
+        console.log(userInput[i]);
+}
+
+   if (userInput == (userInput[i])){
+        console.log("It is a palindrome!.");
+   }else{
+        console.log("It is not a palindrome!.");  
+
+}
+
+
+
+/*
+      function isPalindrome(string) {
+        let left = 0;
+        let right = string.length - 1;
+      
+        while (left <= right) {
+          if (string[left] !== string[right]) return false;
+          left++;
+          right--;
+        }
+      
+      return true;
+      }
+*/
+
+/*
+let rev = "racecar";
+
+if (rev==num){  //if reverse variable equals to original variable
+console.log ("is palindrome");
+}else{
+console.log("not palindrome");
+}
+*/
+
+/*
+let num = "racecar";
+let rev = "";
+
+while (false){
+        rev +="";
+}
+
+if (rev == num){
+console.log ("is palindrome");
+}else{
+console.log("not palindrome");
+}
+console.log(num);
+*/
+
+
+//Using 'for' loop to find palindrome word.
+
+/*let string=prompt("Please enter a word:");
 console.log(string);
 
 let len = string.length;
-
 
 //length of string (entered word) is split in half, both parts are then compared.
 // First part is iterated through for loop:
@@ -22,3 +83,5 @@ console.log(string[len-1-i]);
         msg="It is a pallindrome word.";
 }
 console.log(`${string}: ${msg}`);
+
+*/

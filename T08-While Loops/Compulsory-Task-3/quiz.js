@@ -1,41 +1,53 @@
         //T08 - Compulsory-Task 3
 
-//let correctAns = "c";
+/*let correctAns = "c"; 
 let a = "a";
 let b = "b";
 let c = "c";
 let d = "d";
 let count = 0;
+*/
+
+
 let userInput = ""
 
 do {
    userInput= prompt("What color is the Sky? \na: Purple \nb: Pink \nc: Blue \nd: Yellow. Enter a, b, c or d : ");
    if (userInput=="c") {
-    //write console.log correct
+    console.log("That's correct!.")
+    
    }else{
-    //add prompt wrong answer copy line 12, do you want to try again
-   }
-//prompt user for y or n 
-   
-  //  count= count+1;
-}
- while (userInput=="y");
 
+    userInput= prompt("Sorry, your answer is incorrect. Would you like to try again? Enter y for yes and n for no:  ");
+
+   }
+
+}
+ while (userInput=="y"){
+  //  If the user types y for yes, the while loop will go back to line 15 above, to ask question again.
+ }
+  if (userInput == "n"){
+  console.log ("Thank you for taking the quiz.");
+  }
+
+
+
+
+
+
+ /*if (userInput=="c") {
+  console.log("That's correct!.")
+  
+ }else{
+
+  userInput= prompt("Sorry, your answer is incorrect. Would you like to try again? Enter y for yes and n for no:  ");
+
+ }
    // console.log("That's incorrect!.")
    
   //  let retry = alert("Try again? y/n")
 
-
-// eif (retry == y) {
-//     count ++;
-// }
-// else if (retry == n) {
-//     break [label];
-// }lse (answer == c) {
-//     console.log("That's correct !");
-// }
-
-
+*/
 
 
 /*let inputCol=prompt("What color is the Sky? \na: Purple \nb: Pink \nc: Blue \nd: Yellow. Enter a, b, c or d : ");
