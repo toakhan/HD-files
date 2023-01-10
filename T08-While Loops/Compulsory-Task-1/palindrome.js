@@ -1,7 +1,47 @@
 //Program to check if an entered word is a Palindrome word.
 
+/*user input for word
+first letter == last letter
+second letter == second last letter
+loop*/
 
-let userInput = "";
+let palindrome = "racecar";
+let i = 0
+let palindromeCheck=true
+
+
+while (true){
+        firsthalfLetter=palindrome.charAt(i);
+        secondhalfLetter=palindrome.charAt(palindrome.length-1-i);
+if (firsthalfLetter!=secondhalfLetter) {
+        palindromeCheck=false
+        break
+}
+
+i++
+if (i==7){break}
+}
+
+
+palindrome=prompt("Enter a word : ");
+      if  (palindromeCheck==false){
+        console.log("The entered word is not a palindrome.");
+      }else{
+        console.log("The entered word is a palindrome.");
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+/*let userInput = "";
 let i = userInput.length;
 
 userInput = prompt("Enter a word : ");
