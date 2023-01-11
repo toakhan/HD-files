@@ -8,10 +8,11 @@ while (count < 5) {
 
     let inputNum=parseInt(prompt("Please enter a number: "));
     console.log (inputNum);
-
+    if (inputNum==-1){
+        break;}
     sum = (sum + inputNum);
     count += 1 //count = count + 1
 
 }
- avg = sum/5;
+ avg = sum/count;
  console.log (avg);

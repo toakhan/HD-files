@@ -3,40 +3,33 @@
 /*user input for word
 first letter == last letter
 second letter == second last letter
+and so on.
 loop*/
 
-let palindrome = "racecar";
-let i = 0
-let palindromeCheck=true
 
+let palindrome = prompt("Enter a word : ");
+let i = 0;
+let palindromeCheck = true;
 
-while (true){
-        firsthalfLetter=palindrome.charAt(i);
-        secondhalfLetter=palindrome.charAt(palindrome.length-1-i);
-if (firsthalfLetter!=secondhalfLetter) {
-        palindromeCheck=false
-        break
+while (true) {
+  firsthalfLetter = palindrome.charAt(i);
+  secondhalfLetter = palindrome.charAt(palindrome.length - 1 - i);
+  if (firsthalfLetter != secondhalfLetter) {
+    palindromeCheck = false;
+    break;
+  }
+
+  i++;
+  if (i == 7) {
+    break;
+  }
 }
 
-i++
-if (i==7){break}
+if ((palindromeCheck == false)) {
+  console.log("The entered word is not a palindrome.");
+} else {
+  console.log("The entered word is a palindrome.");
 }
-
-
-palindrome=prompt("Enter a word : ");
-      if  (palindromeCheck==false){
-        console.log("The entered word is not a palindrome.");
-      }else{
-        console.log("The entered word is a palindrome.");
-      }
-
-
-
-
-
-
-
-
 
 
 
@@ -98,7 +91,6 @@ console.log("not palindrome");
 }
 console.log(num);
 */
-
 
 //Using 'for' loop to find palindrome word.
 
