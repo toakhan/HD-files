@@ -1,0 +1,83 @@
+pseudo.txt file, submitted by amjad khan.
+
+Thinking like a programmer:
+Compulsory Task 1
+
+Sub-Task 1: Total number of vowels?
+
+Set the count = 0
+For each subsequent letter entry, keep increasing 
+the count by 1.
+Stop counting when a number, instead of a letter is entered.
+
+Compare each entered letter to the vowels a, e, i, o, u. 
+
+If the entered letter is equal to any vowel, count 1 and keep 
+increasing the count by 1 for each subsequent letter=vowel 
+condition.
+
+When all letters are tested for the above condition, the counter gives the total number 
+of vowels in set of entered/compared letters.
+
+
+
+Thinking like a programmer:
+Compulsory Task 1
+
+Sub-Task 2: An algorithm to find averages of even and odd integers
+
+Enter an integer.
+
+Check if it is an even number i.e. n= 0,2,4,6...
+
+If it is an even number, count one more to the previous even number
+entry i.e. n+1, repeat the process for all the subsequent numbers
+entered.
+
+Average of even numbers = Sum of all even numbers divided by the
+total number of even entries.
+
+If the entered integer is not an even number, else it's odd.
+
+Average of odd integers = Sum of all odd numbers divided by the
+number (frequency) of odd integers entered.
+
+
+
+Thinking like a programmer:
+Compulsory Task 1
+
+Sub-Task 3: An  algorithm that reads a list of names and prints
+them out in alphabetical order.
+
+Input list of names.
+
+Compare first letter of the first name with the first letter 
+of the second name and maintain the alphabetical order as follows:
+
+If the first letter of the first name is lower in the alphabetical
+order as compared to the first letter of the second name, names are not
+swapped.
+
+If the first letter of the first name is higher up in the 
+alphabetical order as compared to the first letter of the second
+name, then both names are swapped to achieve alphabetical order.
+
+The same process is repeated, comparing the first letter of each 
+name with the first letter of the subsequent name. 
+
+Alphabetical order is achieved, by either retaining the 
+position of both names or by swapping them.
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+Amjad Khan
+
+Compulsory Task 2
+
+
+Sub-Task 2/1:
+
+
+Variable: firstName
+
+Let firstName = prompt ("Please enter your first name:")
+
+console.log (Hello:firstName)
+
+Algorithm prints out: "Hello" and the first name.
+
+
+
+Sub-Task 2/2:
+
+
+Variable: age
+
+Let age = prompt ("Please enter your age in years":)
+
+console.log ("Based on your age of (age given), it looks like you 
+
+were born in [current year - age = year of birth]")
+
+
+
+
+
+
+
+
+
+
+
+
