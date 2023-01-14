@@ -11,5 +11,5 @@ vehicles [4]="Audi";
 
 for (let i=0; i < vehicles.length; i++){
     console.log("I would love to drive a: " + vehicles[i]);
-    //repeated five times, once for each [nameofVehicle] in the array.
+    //repeated five times, once for each [Vehicle] in the array.
 }

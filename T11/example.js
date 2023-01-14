@@ -56,7 +56,7 @@ console.log("The student at index 0 of jsStudents is " + jsStudents[0]);
 //What is the name of the student in index 4 of jsStudents? Uncomment the code below and execute the code to
 //see if you are correct
 
-//console.log(jsStudents[4]);
+console.log(jsStudents[4]);
 
 
 // ========= Example 5 =========
