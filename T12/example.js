@@ -76,6 +76,7 @@ yearOfBirth3 = 1991;
 age3 = thisYear3 - yearOfBirth3;
 alert("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
 console.log("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
+
 */
 
 

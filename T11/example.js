@@ -156,4 +156,4 @@ for (let [key,value] of colourMap) {
 }
 
 
-// ****************** END OF EXAMPLE CODE *********************
+// ****************** END OF EXAMPLE CODE *****************
