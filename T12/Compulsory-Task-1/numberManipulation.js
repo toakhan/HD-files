@@ -1,5 +1,89 @@
 // T12 - Compulsory-Task-1
 
+let nums = new Array();
+    let N = prompt("How many numbers would you like to enter? ");
+    N = parseInt(N);
+    let i = 0, s = 0;
+    for(i = 0; i <= N - 1; i++)
+    {
+        nums[i] = parseInt(prompt("Enter your numbers: "));
+        s += nums[i];
+        console.log("Number you chose: " + nums[i] + "<br />");
+    }
+    let ave = s / N;
+    console.log("Average: " + ave + "<br />");
+
+
+
+/*
+let numbers=[]
+for (i=0;i<10;i++){
+    userInput =Number(prompt("Please enter 10 numbers: "));
+        numbers.push(userInput)
+    
+}
+console.log(numbers);
+   
+var count = 0;
+var input;
+var sum = 0;
+
+        count++;
+        input = prompt("Enter a number");
+        sum += input;
+        sum = parseInt(sum);
+    
+        average = (sum/count);
+alert("Average number is " + average);
+
+*/
+
+
+
+/*Find the total of all the numbers and log the result to the console.
+function hello() {
+    var arr = [];
+
+    for (var i = 0; i < 10; i++) {
+        arr.push(prompt('Enter number' + (i+1)));
+    }        
+
+    var total = 0;
+
+    for(i=0; i<arr.length; i++) {
+        var number = parseInt(arr[i], 10);
+        total += number;
+    }
+
+    console.log(total);
+}
+
+*/
+
+//Find the index of the maximum and log the result to the console.
+let max=0
+//pseudo
+//if array[i]>max;
+//then we run for loop
+
+
+
+//Find the index of the minimum and log the result to the console.
+
+
+
+
+//Calculate the average of the numbers and round off to 2 decimal places.
+//log the result to the console.
+//for loop
+
+
+
+//Find the median number and log the result
+//to the console.
+
+
+/*
 let name1 = "Nkosi";
 let age1 = 25;
 alert("Hello World! I'm " + name1 + " I am " + age1 + " years old.");
@@ -30,9 +114,9 @@ displayMessage("Timothy", calculateAge(2000));
 displayMessage("Jack", calculateAge(1986));
 displayMessage("Eric", calculateAge(1991));
 
-//Above four lines of code replaces the following
-//many lines of code for the same task.
-
+Above four lines of code replaces the following
+many lines of code for the same task.
+*/
 /*
 let name3 = "Bethany";
 let yearOfBirth3 = 1994;
@@ -61,24 +145,5 @@ console.log("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
 
 */
 
-let guestNames=[];//defining array
-//e.g.  guestNames[0]="John";
-//      guestNames[1]="Tom"; etc.
 
-let x=prompt("Please enter number of invited guests:");
-        console.log(parseInt("guests invited."));
-
-//Input
-for (let i=0; i<=x; i++){
-    guestNames[x]=prompt("Please enter name of each guest: ");
-        console.log(`Name of each guest is: ${guestNames[x]}`);
-       
-}
-
-let arrayLength=guestNames.length;
-console.log(`guestNames is an array with ${arrayLength} , guests names in it.`);
-
-console.log(arrayLength);
-console.log(arrayLength[0]);
-console.log(arrayLength[4]);
 

@@ -21,11 +21,8 @@ for (let [key,value] of translator) {
     console.log(`The meaning of ${key} is ${value}.`);
 }
 
-/*
-let key=prompt("Please input a key word to find it's meaning: ");
-    console.log(value);
 
-for(let value of translator){
-     console.log(value);
-} 
-*/
+let key=prompt("Please input one of the key word to find it's meaning: ");
+    console.log(translator.get(key));
+
+
