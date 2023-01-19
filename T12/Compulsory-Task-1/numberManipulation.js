@@ -1,8 +1,9 @@
 // T12 - Compulsory-Task-1
 
-let nums = new Array();
-    let N = prompt("How many numbers would you like to enter? ");
-    N = parseInt(N);
+/*
+let nums = [];
+    let N = 10;
+  
     let i = 0, s = 0;
     for(i = 0; i <= N - 1; i++)
     {
@@ -10,140 +11,66 @@ let nums = new Array();
         s += nums[i];
         console.log("Number you chose: " + nums[i] + "<br />");
     }
+
+    console.log("Total: " + s)
     let ave = s / N;
     console.log("Average: " + ave + "<br />");
-
-
-
-/*
-let numbers=[]
-for (i=0;i<10;i++){
-    userInput =Number(prompt("Please enter 10 numbers: "));
-        numbers.push(userInput)
     
-}
-console.log(numbers);
-   
-var count = 0;
-var input;
-var sum = 0;
 
-        count++;
-        input = prompt("Enter a number");
-        sum += input;
-        sum = parseInt(sum);
-    
-        average = (sum/count);
-alert("Average number is " + average);
+    var max=nums[0];
 
-*/
-
-
-
-/*Find the total of all the numbers and log the result to the console.
-function hello() {
-    var arr = [];
-
-    for (var i = 0; i < 10; i++) {
-        arr.push(prompt('Enter number' + (i+1)));
-    }        
-
-    var total = 0;
-
-    for(i=0; i<arr.length; i++) {
-        var number = parseInt(arr[i], 10);
-        total += number;
+    for(let i=0; i<nums.length; i++){
+        if (nums[i]>=max){
+            max=nums[i];
+            console.log("Setting max to: " + max);
+        }
     }
+    console.log("Maximum value: " + max);
 
-    console.log(total);
-}
+    var min=nums[0];
 
-*/
-
-//Find the index of the maximum and log the result to the console.
-let max=0
-//pseudo
-//if array[i]>max;
-//then we run for loop
-
-
-
-//Find the index of the minimum and log the result to the console.
+    for(let i=0; i<nums.length; i++){
+        if (nums[i]<=min){
+            min=nums[i];
+            console.log("Setting min to: " + min);
+        }
+    }
+    console.log("Minimum value: " + min);
 
 
+    nums.sort(function(a, b){return a-b});
+    console.log(nums)
 
-
-//Calculate the average of the numbers and round off to 2 decimal places.
-//log the result to the console.
-//for loop
-
-
-
-//Find the median number and log the result
-//to the console.
-
-
-/*
-let name1 = "Nkosi";
-let age1 = 25;
-alert("Hello World! I'm " + name1 + " I am " + age1 + " years old.");
-console.log("Hello World! I'm " + name1 + " I am " + age1 + " years old.");
-
-
-const name2 = "Bethany";
-const yearOfBirth2 = 1994;
-const thisYear2 = new Date().getFullYear();
-const age2 = thisYear2 - yearOfBirth2;
-alert("Hello World! I'm " + name2 + " I am " + age2 + " years old.");
-console.log("Hello World! I'm " + name2 + " I am " + age2 + " years old.");
-
-
-function calculateAge(birthYear) {
-    const thisYear = new Date().getFullYear();
-    const age = thisYear - birthYear;
-    return age;
-}
-
-function displayMessage(name, age){
-    alert("Hello World! I'm " + name + " I am " + age + " years old.");
-    console.log("Hello World! I'm " + name + " I am " + age + " years old.");
-}
-
-displayMessage("Bethany", calculateAge(1994));
-displayMessage("Timothy", calculateAge(2000));
-displayMessage("Jack", calculateAge(1986));
-displayMessage("Eric", calculateAge(1991));
-
-Above four lines of code replaces the following
-many lines of code for the same task.
-*/
-/*
-let name3 = "Bethany";
-let yearOfBirth3 = 1994;
-const thisYear3 = new Date().getFullYear();
-let age3 = thisYear3 - yearOfBirth3;
-alert("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
-console.log("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
-
-name3 = "Timothy";
-yearOfBirth3 = 2000;
-age3 = thisYear3 - yearOfBirth3;
-alert("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
-console.log("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
-
-name3 = "Jack";
-yearOfBirth3 = 1986;
-age3 = thisYear3 - yearOfBirth3;
-alert("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
-console.log("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
-
-name3 = "Eric";
-yearOfBirth3 = 1991;
-age3 = thisYear3 - yearOfBirth3;
-alert("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
-console.log("Hello World! I'm " + name3 + " I am " + age3 + " years old.");
-
+    let median=(nums[4]+nums[5])/2
+    console.log("Median: " + median);
 */
 
 
 
+
+
+//e.g. simmy sigma ut:
+
+//To find the maximum value in an array:
+
+let nums= [70,65,3,21,58,93,12,82,15,34,73,2,120];
+
+let max=nums[0]; //index 0 value is 70
+//i=0 means value is 70, which at first loop i=1
+//i=1 is compared to 65, 70 is > 65 (true), so
+//loop goes second time at i=2 to third index
+//element 3 and the condition is true again
+//i.e. 70 is > than 3. At 5th loop, 70!<93 
+//condition becomes false, so loop stops.
+
+for(let i=0; i<nums.length; i++){
+    if (nums[i]>max){
+        max=nums[i];
+        console.log("Setting max to: " + max);
+    }
+}
+console.log(max);
+
+
+//To find the min value, copy & paste the above
+//code and change max to min and > to <.
