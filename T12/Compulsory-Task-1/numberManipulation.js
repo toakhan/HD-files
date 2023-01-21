@@ -55,13 +55,19 @@ let nums = [];
 
 let nums= [70,65,3,21,58,93,12,82,15,34,73,2,120];
 
-let max=nums[0]; //index 0 value is 70
-//i=0 means value is 70, which at first loop i=1
-//i=1 is compared to 65, 70 is > 65 (true), so
-//loop goes second time at i=2 to third index
+let max=nums[0]; 
+//Initiaally, i=0 is set to nums index [0] 
+//value of 70 at first loop.
+//At second loop i=1, 70 is then compared 
+//to second index 65, 70 is > 65 (true), so
+//the loop goes third time at i=2 to third 
 //element 3 and the condition is true again
-//i.e. 70 is > than 3. At 5th loop, 70!<93 
-//condition becomes false, so loop stops.
+//i.e. 70 is > than 3. At i=4, 5th loop, 70!>93 
+//condition becomes false, so value of max 
+//becomes 93. The subsequent each loop checks
+//condition for each subsequent number and if 
+//a higher number than 93 is encountered then 
+//that new value is recordrd in max.
 
 for(let i=0; i<nums.length; i++){
     if (nums[i]>max){
