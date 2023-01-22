@@ -10,7 +10,8 @@ console.log(b += ' world'); // Concatenation
 // expected output: "hello world"
 
 
-//example of for loop with +=
+
+//example of a for loop with +=
 <!DOCTYPE html>
 <html>
 <body>
@@ -27,10 +28,78 @@ for (let i = 0; i < 5; i++) {
 }
 
 document.getElementById("demo").innerHTML = text;
+
 </script>
 
 </body>
 </html>
+
+// T12-Task-3 Program for a simple calculator by
+// taking the user input
+
+let number1 = parseFloat(prompt('Please enter first number: '));
+let number2 = parseFloat(prompt('Please enter second number: '));
+
+let operator = prompt(" Please enter operator, either add, subtract, multiply or divide : " );
+
+let result;
+
+// using if...else if... else statement
+if (operator == 'add') {
+    result = number1 + number2;
+}
+else if (operator == 'subtract') {
+    result = number1 - number2;
+}
+else if (operator == 'multiply') {
+    result = number1 * number2;
+}
+else {
+    result = number1 / number2;
+}
+
+// display the result
+console.log(`${number1} ${operator} ${number2} = ${result}`);
+
+/*
+using switch statement/operator
+program for a simple calculator
+let result;
+
+// take the operator input
+const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+// take the operand input
+const number1 = parseFloat(prompt('Enter first number: '));
+const number2 = parseFloat(prompt('Enter second number: '));
+
+switch(operator) {
+    case '+':
+         result = number1 + number2;
+        console.log(`${number1} + ${number2} = ${result}`);
+        break;
+
+    case '-':
+         result = number1 - number2;
+        console.log(`${number1} - ${number2} = ${result}`);
+        break;
+
+    case '*':
+         result = number1 * number2;
+        console.log(`${number1} * ${number2} = ${result}`);
+        break;
+
+    case '/':
+         result = number1 / number2;
+        console.log(`${number1} / ${number2} = ${result}`);
+        break;
+
+    default:
+        console.log('Invalid operator');
+        break;
+}
+*/
+
 
 
 //from mdn docs basic javascript crash course

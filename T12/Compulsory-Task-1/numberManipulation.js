@@ -1,6 +1,6 @@
 // T12 - Compulsory-Task-1
 
-/*
+
 let nums = [];
     let N = 10;
   
@@ -17,7 +17,7 @@ let nums = [];
     console.log("Average: " + ave + "<br />");
     
 
-    var max=nums[0];
+    let max=nums[0];
 
     for(let i=0; i<nums.length; i++){
         if (nums[i]>=max){
@@ -27,7 +27,7 @@ let nums = [];
     }
     console.log("Maximum value: " + max);
 
-    var min=nums[0];
+    let min=nums[0];
 
     for(let i=0; i<nums.length; i++){
         if (nums[i]<=min){
@@ -43,7 +43,7 @@ let nums = [];
 
     let median=(nums[4]+nums[5])/2
     console.log("Median: " + median);
-*/
+
 
 
 
@@ -52,7 +52,7 @@ let nums = [];
 //e.g. simmy sigma ut:
 
 //To find the maximum value in an array:
-
+/*
 let nums= [70,65,3,21,58,93,12,82,15,34,73,2,120];
 
 let max=nums[0]; 
@@ -80,3 +80,4 @@ console.log(max);
 
 //To find the min value, copy & paste the above
 //code and change max to min and > to <.
+*/
