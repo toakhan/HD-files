@@ -10,11 +10,11 @@ replaced with a "!".
 - The word where every 6th letter is uppercase.
 - An array of the ascii values for each character in the word.
 */
-/*
+
 //- The word where every second character is
 //replaced with a "!":
-let userInput= prompt("Please enter a word: ");
 
+let userInput= prompt("Please enter a word, for every second letter conversion to ! : ");
 let str = userInput.split('');
 let nth = 2; // the nth character to replace
 let replaceWith = "!" // the character to replace the nth value
@@ -22,10 +22,10 @@ for (let i = 1; i < str.length; i+=2) {
     str[i] = replaceWith
 }
 alert( str.join("") );
-
+console.log(str);
 
 //- The word reversed:
-let word = prompt("Please enter a word: ");
+let word = prompt("Please enter a word to be reversed: ");
 let wordLen = word.length;
 let revWord = "";
 //console.log(word);
@@ -33,19 +33,25 @@ let revWord = "";
 
 for (let i= wordLen-1; i>=0; i--) {
     console.log(word[i]);
-    revWord += word [i];
+    revWord += word[i];
 }
-console.log(`${word} "reverse is :" ${revWord}`);
-*/
+console.log(`Reverse of ${word} is : ${revWord}`);
+
 
 // The word where every 6th letter is uppercase:
-let word = prompt("Please enter a word: ");
-    console.log(word);
-let sixth = word.charAt(5);
-for (let i=0; i<=word.length; i+=6){
- //   console.log(sixth);
+let word1 = prompt("Please enter a word, for every sixth letter conversion to uppercase: ");
+ console.log(word1);
+let string = ""
+let sixth = word1.charAt(5);
+for (let i=0; i<=word1.length; i++){
+    if (i%6===0){
+        string+=word1.charAt(i).toUpperCase()
+    }
+    else{
+        string+=word1.charAt(i).toLowerCase()
+    }
 }
-    console.log(sixth.toUpperCase());   
+    console.log (`Every sixth character is uppercase: ${string}`);   
 
 
 /*
@@ -64,16 +70,17 @@ console.log(customToUpperCase(str1))
 //let caps = sixth.toUpperCase() + rem;
     //console.log(`Final ${caps}`);
     
+*/
 /*
 let word = prompt("Enter a word:");
 for (let i=5; i < word.length; i+=6) {
 let x = word.charAt(i).toUpperCase();
 console.log(word);
 }
-
 */
+
 //- An array of the ascii values for each character in the word.
-/*
+
 let charCodeArr = [];
 let s = prompt("Please enter a word to convert to ASCII code: ");
 for(let i = 0; i < s.length; i++){
@@ -82,12 +89,5 @@ for(let i = 0; i < s.length; i++){
 }
 //return charCodeArr;
 console.log(`The ASCII code for word '${s}' is [${charCodeArr}]`);
-*/
 
-/* example ascii values:
-Dec	Binary	Char	Dec	Binary	Char	Dec	Binary
-033	00100001	A	065	01000001	a	097	01100001
-034	00100010	B	066	01000010	b	098	01100010
-035	00100011	C	067	01000011	c	099	01100011
-View 29 more rows
-*/
+

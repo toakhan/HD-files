@@ -45,10 +45,6 @@ let nums = [];
     console.log("Median: " + median);
 
 
-
-
-
-
 //e.g. simmy sigma ut:
 
 //To find the maximum value in an array:

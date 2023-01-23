@@ -31,7 +31,7 @@ the output would be 6 x 7 = 42.
 let number1 = parseFloat(prompt('Please enter first number: '));
 let number2 = parseFloat(prompt('Please enter second number: '));
 
-let operator = prompt(" Please enter operator, either add, subtract, multiply or divide : " );
+let operator = prompt(" Please type operator, either add (for +), subtract (for -), multiply (for * or x) or divide (for /): " );
 
 let result;
 

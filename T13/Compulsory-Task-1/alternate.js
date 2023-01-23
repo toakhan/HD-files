@@ -1,8 +1,34 @@
+
 alternativeString = (myString) => {
     // Place your code here
-    
+   
+    let chars = myString.split("");
+       
+    for(let i=0; i<chars.length; i++){
+      
+        chars[i]=chars[i].toLowerCase();
+    }   
+    for(let i=0; i<chars.length; i=i+2){
+
+        chars[i]=chars[i].toUpperCase();
+      
+    }
+    return chars.join("");
 }
 
+
+/*
+alternativeString = (myString) => {
+    let string = "";
+    for (let i=0; i<myString.length; i++){
+        if(i%2===0){
+            string+=myString[i].toUppercase();
+        }else{
+            string+=myString[i].toLowercase();
+        }
+    } //return string
+}
+*/
 
 // DO NOT EDIT BELOW THIS LINE
 let testStrings = [
