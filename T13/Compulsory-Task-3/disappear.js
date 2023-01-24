@@ -1,5 +1,15 @@
 disappearString = (myString, toErase) => {
     // Place your code here
+
+let newString = myString;
+
+for (i=0; i<toErase.length; i++){
+    if (newString.indexOf(toErase[i])>=0){
+        newString=newString.replace(toErase[i], "");
+    }
+}
+return newString;
+
 }
 
 

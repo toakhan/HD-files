@@ -1,6 +1,25 @@
+   // Place your code here
+
 separationString = (myString) => {
-    // Place your code here
-}
+ 
+    myString.split(/\s/); //.join('<br>');
+
+    return myString;
+
+    }
+
+/*example
+    string to array function: str.split();
+    array to string: arr.join();
+
+    let sentence = "Hello my name is Ronny";
+    let words = sentence.split(" ").sort();
+        console.log(words);
+    let chars = sentence.split ("name");
+        console.log(chars);
+    let chars1 = sentence.split ("");
+        console.log(chars1);
+*/
 
 
 // DO NOT EDIT BELOW THIS LINE
