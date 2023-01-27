@@ -2,8 +2,10 @@
 
 separationString = (myString) => {
  
-    myString.split(/\s/); //.join('<br>');
-
+    myString.split(/\s/) //.join('\n');
+    myString.split(/\b\s+/); 
+    myString.split("\r\n")
+    myString.split("\\\\n")
     return myString;
 
     }
