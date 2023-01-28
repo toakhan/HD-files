@@ -2,12 +2,9 @@
 
 separationString = (myString) => {
  
-    myString.split(/\s/) //.join('\n');
-    myString.split(/\b\s+/); 
-    myString.split("\r\n")
-    myString.split("\\\\n")
-    return myString;
+    let newString=myString.split(" ").join("\n");
 
+    return newString
     }
 
 /*example
