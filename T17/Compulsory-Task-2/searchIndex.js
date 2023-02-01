@@ -2,8 +2,8 @@
 function dataArray( arr ){
     for ( let i = 0; i < arr.length; i++ ) {
 	
-        if( arr[i] == "cat" ){
-            console.log( "cat found.");
+        if( arr[i] == "css" ){
+            console.log( "css found.");
             return true;
         } else if( Array.isArray( arr[i] ) ){
             if (dataArray(arr[i])) return true;
