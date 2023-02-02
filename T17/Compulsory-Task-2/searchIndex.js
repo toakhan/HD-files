@@ -1,22 +1,30 @@
 
-function dataArray( arr ){
-    for ( let i = 0; i < arr.length; i++ ) {
-	
-        if( arr[i] == "css" ){
+function dataArray( arr ,item){
+	if (arr.length-1==0){
+		return -1 //base case
+	}
+	else if (arr[arr.length-1]==item){
+		return arr.length-1//last index
+	}
+	else {
+		return dataArray(arr,item)//calling function again
+	}
+/*        if( arr[i] == "css" ){
             console.log( "css found.");
             return true;
         } else if( Array.isArray( arr[i] ) ){
             if (dataArray(arr[i])) return true;
         }
-    }
+    
 
     return false;
+	*/
 }
 
-let arr=[["java", "html","javaScripts", "css"]];
+let arr=["java", "html","javaScripts","css"];
+console.log(arr[arr.length-1])//gives last index
+dataArray(arr,"html")
 
-console.log(dataArray(arr));
-console.log(arr.findIndex(dataArray));
 
 
 
