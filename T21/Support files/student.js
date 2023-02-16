@@ -1,6 +1,4 @@
-// ************* HELP *****************
-// REMEMBER THAT YOU IF YOU EVER NEED ANY HELP AT ALL, EMAIL US ON HELP@HYPERIONDEV.COM.
-// ************************************
+
 
 class Student{
 	//This is the constructor of this class

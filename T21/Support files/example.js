@@ -2,9 +2,6 @@
 // Please ensure that you have read through the task file (pdf) before continuing here as some of
 // the examples and explanations assume you have done so.
 
-// ************* HELP *****************
-// REMEMBER THAT YOU IF YOU EVER NEED ANY HELP AT ALL, EMAIL US ON HELP@HYPERIONDEV.COM.
-// ************************************
 
 // ==== LET'S OOP! ====
 
