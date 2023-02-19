@@ -52,6 +52,9 @@ else {
 // display the result
 console.log(`${number1} ${operator} ${number2} = ${result}`);
 
+
+
+
 /*
 using switch statement/operator
 program for a simple calculator
