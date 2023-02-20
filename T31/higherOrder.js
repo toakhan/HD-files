@@ -15,7 +15,6 @@ function myFilterFunction(arr, callback) {
     // Return the filtered array
     return filteredArr;
   }
-  
   // Define the array of strings to be filtered
   let words = ['apple', 'banana', 'cherry', 'grape', 'kiwi', 'lemon', 'mango', 'orange', 'peach', 'pear'];
   
