@@ -1,0 +1,147 @@
+/* Global styles */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 20px;
+  color: brown;
+}
+
+img {
+
+  border: blue 2px solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#paral {
+  color: navy;
+}
+
+div{
+  border:#333 1px solid;
+  border-radius: 5px;
+}
+
+nav {
+  display: inline-block;
+  margin: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main content styles */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+section {
+  flex-basis: 70%;
+  margin-right: 20px;
+}
+
+
+h2,
+h3 {
+  font-style: italic;
+  font-family: Times New Roman, serif;
+}
+
+figure {
+  margin: 20px 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#quote
+{
+  border: springgreen 5px;
+  border-style: dotted dashed solid double;
+  padding: 10px;
+}
+
+.copyright {
+  font-size: 25px;
+  line-height: 20px;
+  color: plum;
+  font-family: monospace;
+  padding: 4px;
+  margin-left: 6px;
+}
+
+/* Sidebar styles */
+
+aside {
+  flex-basis: 25%;
+  border: #333 1px solid;
+  padding: 0 20px;
+  
+}
+aside > ul >li > p
+{
+  text-indent: 20px;
+}
+aside> ul li:nth-child(-n+2) p
+{
+  background-color: cadetblue;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

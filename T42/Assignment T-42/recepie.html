@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>My Favorite Recipe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Details</a></li>
+                <li><a href="saved.html">Saved For Later</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="recipe grid-container">
+        <section>
+            <img src="./img/post-1.jpeg" alt="Banana Pancakes">
+        </section>
+        <section>
+            <article class="recipe-info">
+                <h2>Banana Pancakes</h2>
+                <p>
+                    Shabby chic humblebrag banh mi bushwick, banjo kale chips
+                    meggings. Cred selfies sartorial, cloud bread disrupt blue bottle
+                    seitan. Dreamcatcher tousled bitters, health goth vegan venmo
+                    whatever street art lyft shabby chic pitchfork beard. Drinking
+                    vinegar poke tbh, iPhone coloring book polaroid truffaut tousled
+                    ramps pug trust fund letterpress. Portland four loko austin
+                    chicharrones bitters single-origin coffee. Leggings letterpress
+                    occupy pour-over.
+                </p>
+                <div class="recipe-icons">
+                    <article>
+                        <h5>prep time</h5>
+                        <p>30 min.</p>
+                    </article>
+                    <article>
+                        <h5>cook time</h5>
+                        <p>15 min.</p>
+                    </article>
+                    <article>
+
+                        <h5>serving</h5>
+                        <p>6 servings</p>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h2>Instructions</h2>
+            <ul class="method-list">
+                <li>
+                    <h3>Step 1</h3>
+                    <p>In a medium bowl, whisk together the flour, baking powder, salt, and sugar.</p>
+                </li>
+                <li>
+                    <h3>Step 2</h3>
+                    <p>In a separate bowl, whisk together the milk, eggs, melted butter, and mashed bananas.</p>
+                </li>
+                <li>
+                    <h3>Step 3</h3>
+                    <p>Add the wet ingredients to the dry ingredients and mix until just combined.</p>
+                </li>
+                <li>
+                    <h3>Step 4</h3>
+                    <p>Heat a non-stick pan over medium heat. Use a 1/4 cup measure to scoop the batter onto the pan.
+                    </p>
+                </li>
+                <li>
+                    <h3>Step 5</h3>
+                    <p>Cook the pancakes until the bubbles on the surface pop and the edges start to dry, then flip and
+                        cook
+                        for another minute or so on the other side.</p>
+                </li>
+                <li>
+                    <h3>Step 6</h3>
+                    <p>Serve the pancakes with your favorite toppings, such as butter, syrup, fresh fruit, or whipped
+                        cream.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>2 cups all-purpose flour</li>
+                <li>2 teaspoons baking powder</li>
+                <li>1/2 teaspoon salt</li>
+                <li>1/4 cup granulated sugar</li>
+                <li>1 1/2 cups milk</li>
+                <li>2 large eggs</li>
+                <li>1/4 cup unsalted butter, melted</li>
+                <li>2 ripe bananas, mashed</li>
+            </ul>
+        </section>
+    </main>
+    <main>
+        <section>
+            <div>
+                <h2>Leave a Comment</h2>
+                <form id="comment-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea><br><br>
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="comments">
+                <h2>Comments</h2>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 My Recipe Website</p>
+    </footer>
+    <script>
+        const form = document.querySelector('form');
+        const submitBtn = document.getElementById('submit');
+
+        const commentsContainer = document.getElementById('comments');
+        form.addEventListener('submit', handleSubmit);
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            // Here you can do whatever you want with the form data
+            console.log('Form submitted!');
+
+
+            // Get the values from the form fields
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const comment = document.getElementById('comment').value;
+
+            // Create a new comment object with the form values
+            const newComment = {
+                name: name,
+                email: email,
+                comment: comment
+            };
+
+            // Add the new comment to the array
+            comments.push(newComment);
+
+            // Save the updated comments to local storage
+            localStorage.setItem('comments', JSON.stringify(comments));
+
+            // Add the new comment to the comments container
+            const commentElement = document.createElement('div');
+            commentElement.innerHTML = `
+            <h3>${newComment.name}</h3>
+            <p><em>${newComment.email}</em></p>
+            <p>${newComment.comment}</p>
+            `;
+            commentsContainer.appendChild(commentElement);
+
+
+        }
+
+
+        // Get the existing comments from local storage
+        let comments = JSON.parse(localStorage.getItem('comments')) || [];
+
+        
+
+        // Add the new comment to the comments container
+        const element = document.getElementById('comments');
+
+
+        comments.forEach(comment => {
+            const commentElement = `
+                <h3>${comment.name}</h3>
+                <p><em>${comment.email}</em></p>
+                <p>${comment.comment}</p>
+            `;
+            console.log(commentElement)
+
+            element.insertAdjacentHTML("beforeend", commentElement);
+        });
+    </script>
+</body>
+
+</html>

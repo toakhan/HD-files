@@ -1,0 +1,1 @@
+T-26 and T-27 are specified in the same folder because I changed the tribute.html code and added the myStyles.css file. The T-27 task is the continuation of the T-26, I just added the myStyles.css file and wrote some more code in the tribute.html file.

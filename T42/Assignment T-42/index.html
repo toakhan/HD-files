@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Landing Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Welcome to My Website</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact Details</a></li>
+				<li><a href="saved.html">Saved For Later</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Featured Recipe</h2>
+			<img src="./img/recipe.jpeg" alt="Featured Recipe" width="300">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo, lorem vel laoreet accumsan, eros
+				sapien pharetra lectus, in lacinia urna lacus eget purus. In vel dapibus magna.</p>
+			<a href="#">Read More</a>
+			<button id="remove-btn">Remove all items</button>
+		</section>
+		<section>
+			<h2>Latest Posts</h2>
+			<ul id="item-list">
+				<li>
+					<div class="post-block" data-id="1">
+						<img src="./img/post-1.jpeg" alt="Post Image" width="150" height="150">
+						<h3>Banana Pancakes</h3>
+						<span>Posted on February 08, 2023</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus neque id felis
+							congue, id
+							facilisis ex maximus. Pellentesque et efficitur urna. </p>
+						<a href="recepie.html" class="btn">Read More</a>
+						<button class="save-btn">Save for Later</button>
+						<button class="like-button">Like</button>
+						<span class="like-count">0 likes</span>
+					</div>
+				</li>
+				<li>
+					<div class="post-block" data-id="2">
+						<img src="./img/post-2.jpg" alt="Post Image" width="150" height="150">
+						<h3>Healthy cauliflower recipes</h3>
+						<span>Posted on June 15, 2022</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus neque id felis
+							congue, id
+							facilisis ex maximus. Pellentesque et efficitur urna. </p>
+						<a href="recepie.html" class="btn">Read More</a>
+						<button class="save-btn">Save for Later</button>
+						<button class="like-button">Like</button>
+						<span class="like-count">0 likes</span>
+					</div>
+				</li>
+				<li>
+					<div class="post-block" data-id="3">
+						<img src="./img/post-3.jpg" alt="Post Image" width="150" height="150">
+						<h3>Cauliflower wings</h3>
+						<span>Posted on November 17, 2020</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus neque id felis
+							congue, id
+							facilisis ex maximus. Pellentesque et efficitur urna. </p>
+						<a href="recepie.html" class="btn">Read More</a>
+						<button class="save-btn">Save for Later</button>
+						<button class="like-button">Like</button>
+						<span class="like-count">0 likes</span>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Subscribe to Our Newsletter</h2>
+			<form action="#" method="post">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="interests">What types of recipes would you like to receive?</label>
+				<ul>
+					<li><input type="radio" id="breakfast" name="interests" value="breakfast"><label
+							for="breakfast">Breakfast</label></li>
+					<li><input type="radio" id="lunch" name="interests" value="lunch"><label for="lunch">Lunch</label>
+					</li>
+					<li><input type="radio" id="dinner" name="interests" value="dinner"><label
+							for="dinner">Dinner</label></li>
+				</ul>
+				<input type="submit" value="Subscribe">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
+	<script src="app.js"></script>
+</body>
+
+</html>
