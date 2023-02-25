@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: cadetblue;">
+    <header>
+        <h1>Shoes Inventory</h1>
+      </header>
+      <main>
+        <section id="search">
+          <h2>Search for a shoe</h2>
+            <label for="product-code">Product name: <q>example : Sneakers</q></label>            
+            <input type="text" id="product-code" name="product-code">
+            <button id="search-button" type="submit">Search</button>          
+          <div id="search-result"></div>
+        </section>
+        <section id="lowest-value">            
+            <h2>Shoe with lowest value per item</h2>
+            <div id="lowest-value-result"></div>
+            <button id="lowest-value-button" type="submit">Show Lowest Product</button>
+        </section>
+        <section id="highest-value">
+          <h2>Shoe with highest value per item</h2>
+          <div id="highest-value-result"></div>
+          <button id="highest-value-button" type="submit">Show Lowest Product</button>
+        </section>
+        <section id="edit">
+          <h2>Edit a shoe</h2>
+            <label for="edit-product-code">Product name:</label>
+            <input type="text" id="edit-product-code" name="edit-product-code">
+            <label for="edit-attribute">Attribute:</label>
+            <select id="edit-attribute" name="edit-attribute">
+              <option value="name">Name</option>
+              <option value="productCode">Product code</option>
+              <option value="quantity">Quantity</option>
+              <option value="value">Value per item</option>
+            </select>
+            <label for="edit-value">New value:</label>
+            <input type="text" id="edit-new-value" name="edit-value">
+            <button id="edit-button" type="submit">Edit</button>
+          <div id="edit-result"></div>
+        </section>
+        <section id="sort">
+          <h2>Sort the inventory</h2>
+          <button id="sort-button">Sort</button>
+          <div id="sort-result"></div>
+        </section>
+      </main>
+      <footer>
+        <p>© 2023 Shoes Inventory</p>
+      </footer>
+    <script src="inventory.js"></script>
+</body>
+</html>

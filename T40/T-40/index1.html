@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budgeting Website</title>
+    <script>
+      // Define income object
+      let income = {
+        entries: [
+          { name: "Salary", amount: 4000, recurring: true },
+          { name: "Freelance", amount: 500, recurring: true },
+          { name: "Gift", amount: 50, recurring: false },
+          { name: "Refund", amount: 100, recurring: false },
+          { name: "Bonus", amount: 1000, recurring: false },
+        ],
+        addEntry: function () {
+          let name = prompt("Enter income source name:");
+          let amount = parseFloat(prompt("Enter amount:"));
+          let recurring = confirm("Is it a recurring income?");
+          this.entries.push({
+            name: name,
+            amount: amount,
+            recurring: recurring,
+          });
+        },
+      };
+
+      // Define expenses object
+      let expenses = {
+        entries: [
+          { name: "Rent", amount: 1000, recurring: true },
+          { name: "Groceries", amount: 350, recurring: true },
+          { name: "Transportation", amount: 100, recurring: true },
+          { name: "Utilities", amount: 250, recurring: true },
+          { name: "Entertainment", amount: 200, recurring: false },
+        ],
+        addEntry: function () {
+          let name = prompt("Enter expense name:");
+          let amount = parseFloat(prompt("Enter amount:"));
+          let recurring = confirm("Is it a recurring expense?");
+          this.entries.push({
+            name: name,
+            amount: amount,
+            recurring: recurring,
+          });
+        },
+      };
+
+      // Function to calculate disposable income
+      function calculateDisposableIncome() {
+        let incomeTotal = 0;
+        let expensesTotal = 0;
+
+        // Calculate total income
+        for (let i = 0; i < income.entries.length; i++) {
+          incomeTotal += income.entries[i].amount;
+        }
+
+        // Calculate total expenses
+        for (let i = 0; i < expenses.entries.length; i++) {
+          expensesTotal += expenses.entries[i].amount;
+        }
+
+        let disposableIncome = incomeTotal - expensesTotal;
+        let savings = parseFloat(prompt("Enter amount to save:"));
+        disposableIncome -= savings;
+        alert("Disposable income: $" + disposableIncome);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Budgeting Website</h1>
+    <button onclick="income.addEntry()">Add Income Entry</button>
+    <button onclick="expenses.addEntry()">Add Expense Entry</button>
+    <button onclick="calculateDisposableIncome()">
+      Calculate Disposable Income
+    </button>
+  </body>
+</html>

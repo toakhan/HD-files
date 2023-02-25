@@ -1,0 +1,33 @@
+Q1- The “P” in HTTP means protocol. Explain it in your own words what a protocol is.
+Answer: A protocol is a set of rules or guidelines that are agreed upon by different systems or devices to communicate with each other. It helps them understand how to exchange information and what format to use. Just like how people agree on specific ways to communicate with each other, protocols allow computers and devices to communicate with each other in a standardized way.
+
+Q2- HTTP is built on top of which protocol?
+Answer: HTTP is built on top of the TCP/IP protocol. TCP (Transmission Control Protocol) is responsible for ensuring reliable data transfer between systems, while IP (Internet Protocol) provides addressing and routing for data packets to be sent across the internet. HTTP is an application layer protocol that uses TCP/IP to transfer data between web browsers and servers.
+
+Q3- If a request is successful, what will be the status code of the response be?
+Answer: If a request is successful, The most common status code for a successful request is 200, which means that the request has been successfully processed and the response contains the requested information. Other status codes in the 2xx range include 201 (Created), 204 (No Content), and 206 (Partial Content), each of which have specific meanings and uses.
+
+Q4- What methods are the crud equivalents in HTTP?
+Answer:The CRUD (Create, Read, Update, Delete) operations in web development can be mapped to equivalent HTTP methods as follows:
+    - Create (POST): This method is used to create new resources on the server. It is typically used when submitting a form or uploading a file to the server.
+    - Read (GET): This method is used to retrieve resources from the server. It is the most commonly used method and is used to fetch web pages, images, and other data from the server.
+    - Update (PUT or PATCH): These methods are used to update existing resources on the server. PUT is used to replace an entire resource with a new version, while PATCH is used to update part of a resource.
+    - Delete (DELETE): This method is used to delete resources from the server. It is typically used when a user wants to delete a file or record from a database.
+
+Q5- What is a stateless protocol?
+Answer:A stateless protocol is a communication protocol that does not require the server to maintain any information about the previous interactions with a client or about the current state of the client. In other words, each request from the client to the server is treated as an independent transaction, and the server does not store any session information or client context between requests. Statelessness allows for a more scalable and fault-tolerant architecture because it simplifies the processing required by the server and reduces the amount of data that must be stored on the server between requests. However, it also places more burden on the client to manage the context of the application and to include all of the required information in each request.
+
+Q6- Which status message can you expect if a server does not allow you permission to request a specific resource?
+Answer: f a server does not allow a client permission to access a specific resource, the client can expect to receive a 403 Forbidden status message in response to the request. The 403 Forbidden response status code indicates that the server understood the request, but is refusing to fulfill it, likely because the user or client does not have the necessary permissions to access the resource.
+
+Q7- Which of the following are valid MIME types?
+	a. Text/time
+	b. Image/jpeg 
+	c. Text/javascript 
+	d. Text/jsx
+	e. Image/psd
+	f. Text/calender
+Answer: The valid MIME types from the options are:
+    b. image/jpeg
+    c. text/javascript
+    e. image/psd

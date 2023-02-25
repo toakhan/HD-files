@@ -1,31 +1,28 @@
-// Define the higher-order function myFilterFunction with 2 parameters: an array of strings and a callback function
-function myFilterFunction(arr, callback) {
-    // Create an empty array to hold the filtered words
-    let filteredArr = [];
-    
-    // Loop through each element in the array
-    for (let i = 0; i < arr.length; i++) {
-      // Check if the current element has 6 letters by invoking the callback function
-      if (callback(arr[i])) {
-        // If the current element has 6 letters, push it to the filtered array
-        filteredArr.push(arr[i]);
-      }
+// Define an array of subjects
+const subjects = ["Mathematics", "Ethics", "History", "Physics", "Computer Science", "Psychology", "Biology", "Health", "Design", "Economics"];
+// Define a variable for subject word length
+const wordLength = 6;
+
+// Call the myFilterFunction with subjects and CallBack as arguments and assign the result to a new variable newSubjects
+const newSubjects = myFilterFunction(subjects, ChcekLength);
+
+function myFilterFunction(str, checkLength) {
+  // Initialize an empty array newSubjects
+  const newSubjects = [];
+  for (let x = 0; x < str.length; x++) {
+    if (checkLength(str[x])) {
+      // If the callback function returns true, push the current element of the array into the newSubjects array
+      newSubjects.push(str[x]);
     }
-  
-    // Return the filtered array
-    return filteredArr;
   }
-  // Define the array of strings to be filtered
-  let words = ['apple', 'banana', 'cherry', 'grape', 'kiwi', 'lemon', 'mango', 'orange', 'peach', 'pear'];
-  
-  // Define the callback function that returns a boolean based on whether a word has 6 letters or not
-  function hasSixLetters(word) {
-    return word.length === 6;
-  }
-  
-  // Invoke the myFilterFunction with the words array and the hasSixLetters callback function
-  let filteredWords = myFilterFunction(words, hasSixLetters);
-  
-  // Log the filtered words to the console
-  console.log(filteredWords);
-  
+  // Return the newSubjects array
+  return newSubjects;
+}
+
+function ChcekLength(word) {
+  // Return true if the length of the subject name is exactly 6 characters long
+  return word.length === wordLength;
+}
+
+// Log the new subjects to the console in table format
+console.table(newSubjects);
